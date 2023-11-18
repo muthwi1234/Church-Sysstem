@@ -2,7 +2,7 @@ import React from 'react'
 
 function Teachers() {
   return (
-    <div>Teachers</div>
+    <div>Welcome</div>
   )
 }
 
