@@ -5,7 +5,7 @@ import ClassOne from './assets/ClassOne';
 import ClassTwo from './assets/ClassTwo';
 import ClassThree from './assets/ClassThree';
 import ClassFour from './assets/ClassFour';
-
+import Teachers from './assets/Teachers';
 function App() {
   return (
     <Router>
@@ -23,6 +23,9 @@ function App() {
           <li>
             <Link to="/class4">Class 4</Link>
           </li>
+          <li>
+            <Link to="/teachers">teachers</Link>
+          </li>
         </ul>
       </nav>
 
@@ -31,6 +34,7 @@ function App() {
         <Route path="/class2" element={<ClassTwo />} />
         <Route path="/class3" element={<ClassThree />} />
         <Route path="/class4" element={<ClassFour />} />
+        <Route path="/teachers" element={<Teachers />} />
       </Routes>
     </Router>
   );
