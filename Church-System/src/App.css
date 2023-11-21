@@ -1,1 +1,102 @@
+nav {
+    background-color: #fff; 
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  Link {
+    text-decoration: none;
+    color: #fff; /* White text color */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  Link:hover {
+    color: #ffcc00; /* Yellow text color on hover */
+  }
+  
+/* ClassOne.css */
+.class-one-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8; /* Light gray background */
+  }
+  
+  .student-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .student-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-button,
+  .delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #4caf50; /* Green background */
+    color: #fff; /* White text color */
+  }
+  
+  .form-container {
+    margin-top: 20px;
+  }
+  
+  .action-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #2196f3; /* Blue background */
+    color: #fff; /* White text color */
+  }
+  /* ClassTwo.css, ClassThree.css, ClassFour.css */
+.class-two-container,
+.class-three-container,
+.class-four-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8; /* Light gray background */
+}
 
+.student-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.student-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.edit-button,
+.delete-button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #ff9800; /* Orange background */
+  color: #fff; /* White text color */
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.action-button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #e91e63; /* Pink background */
+  color: #fff; /* White text color */
+}

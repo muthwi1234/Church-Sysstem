@@ -51,22 +51,26 @@ function ClassFour() {
   };
 
   return (
-    <div>
+    <div className="class-four-container">
       <h2>Class Four</h2>
 
       {/* Student List */}
-      <ul>
+      <ul className="student-list">
         {students.map((student, index) => (
-          <li key={index}>
+          <li key={index} className="student-item">
             {student}
-            <button onClick={() => handleEditStudent(index)}>Edit</button>
-            <button onClick={() => handleDeleteStudent(index)}>Delete</button>
+            <button className="edit-button" onClick={() => handleEditStudent(index)}>
+              Edit
+            </button>
+            <button className="delete-button" onClick={() => handleDeleteStudent(index)}>
+              Delete
+            </button>
           </li>
         ))}
       </ul>
 
       {/* Add/Edit Student Form */}
-      <div>
+      <div className="form-container">
         <label>
           {editIndex !== null ? 'Edit Student' : 'Add Student'}:
           <input
@@ -75,7 +79,7 @@ function ClassFour() {
             onChange={(e) => setNewStudent(e.target.value)}
           />
         </label>
-        <button onClick={handleAddStudent}>
+        <button className="action-button" onClick={handleAddStudent}>
           {editIndex !== null ? 'Update' : 'Add'}
         </button>
       </div>

@@ -6,6 +6,8 @@ import ClassTwo from './assets/ClassTwo';
 import ClassThree from './assets/ClassThree';
 import ClassFour from './assets/ClassFour';
 import Teachers from './assets/Teachers';
+import './App.css';
+
 function App() {
   return (
     <Router>
