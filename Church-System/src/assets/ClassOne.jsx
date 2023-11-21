@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 function ClassOne() {
   const [students, setStudents] = useState([]);
   const [newStudent, setNewStudent] = useState('');
+  const [editIndex, setEditIndex] = useState(null);
 
   useEffect(() => {
     // Retrieve stored data on component mount
@@ -13,13 +14,40 @@ function ClassOne() {
 
   const handleAddStudent = () => {
     if (newStudent.trim() !== '') {
-      const updatedStudents = [...students, newStudent];
-      setStudents(updatedStudents);
-      setNewStudent('');
+      if (editIndex === null) {
+        // Add new student
+        const updatedStudents = [...students, newStudent];
+        setStudents(updatedStudents);
+        setNewStudent('');
 
-      // Store data in localStorage
-      localStorage.setItem('classOneStudents', JSON.stringify(updatedStudents));
+        // Store data in localStorage
+        localStorage.setItem('classOneStudents', JSON.stringify(updatedStudents));
+      } else {
+        // Update existing student
+        const updatedStudents = [...students];
+        updatedStudents[editIndex] = newStudent;
+        setStudents(updatedStudents);
+        setNewStudent('');
+        setEditIndex(null);
+
+        // Store data in localStorage
+        localStorage.setItem('classOneStudents', JSON.stringify(updatedStudents));
+      }
     }
+  };
+
+  const handleEditStudent = (index) => {
+    setNewStudent(students[index]);
+    setEditIndex(index);
+  };
+
+  const handleDeleteStudent = (index) => {
+    const updatedStudents = [...students];
+    updatedStudents.splice(index, 1);
+    setStudents(updatedStudents);
+
+    // Store data in localStorage
+    localStorage.setItem('classOneStudents', JSON.stringify(updatedStudents));
   };
 
   return (
@@ -29,21 +57,27 @@ function ClassOne() {
       {/* Student List */}
       <ul>
         {students.map((student, index) => (
-          <li key={index}>{student}</li>
+          <li key={index}>
+            {student}
+            <button onClick={() => handleEditStudent(index)}>Edit</button>
+            <button onClick={() => handleDeleteStudent(index)}>Delete</button>
+          </li>
         ))}
       </ul>
 
-      {/* Add Student Form */}
+      {/* Add/Edit Student Form */}
       <div>
         <label>
-          Add Student:
+          {editIndex !== null ? 'Edit Student' : 'Add Student'}:
           <input
             type="text"
             value={newStudent}
             onChange={(e) => setNewStudent(e.target.value)}
           />
         </label>
-        <button onClick={handleAddStudent}>Add</button>
+        <button onClick={handleAddStudent}>
+          {editIndex !== null ? 'Update' : 'Add'}
+        </button>
       </div>
     </div>
   );
