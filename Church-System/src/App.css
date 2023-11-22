@@ -100,3 +100,40 @@ nav {
   background-color: #e91e63; /* Pink background */
   color: #fff; /* White text color */
 }
+/* Teachers.css */
+.teachers-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.teacher-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teacher-item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.edit-button,
+.delete-button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green background */
+  color: #fff; /* White text color */
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.action-button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #2196f3; /* Blue background */
+  color: #fff; /* White text color */
+}

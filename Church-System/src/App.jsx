@@ -14,19 +14,19 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/class1">Class 1</Link>
+            <Link to="/class1">Class0ne</Link>
           </li>
           <li>
-            <Link to="/class2">Class 2</Link>
+            <Link to="/class2">ClassTwo</Link>
           </li>
           <li>
-            <Link to="/class3">Class 3</Link>
+            <Link to="/class3">ClassThree</Link>
           </li>
           <li>
-            <Link to="/class4">Class 4</Link>
+            <Link to="/class4">ClassFour</Link>
           </li>
           <li>
-            <Link to="/teachers">teachers</Link>
+            <Link to="/teachers">Teachers</Link>
           </li>
         </ul>
       </nav>
