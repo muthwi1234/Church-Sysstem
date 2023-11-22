@@ -1,139 +1,136 @@
+/* Navigation */
 nav {
-    background-color: #fff; 
-    padding: 10px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  li {
-    margin-right: 20px;
-  }
-  
-  Link {
-    text-decoration: none;
-    color: #fff; /* White text color */
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  Link:hover {
-    color: #ffcc00; /* Yellow text color on hover */
-  }
-  
-/* ClassOne.css */
+  background-color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+Link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+Link:hover {
+  color: #ffcc00;
+}
+
+/* Common Styles for Class Containers, Teachers Container, and Forms */
+.container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.edit-button,
+.delete-button,
+.action-button {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #fff; /* White text color */
+}
+
+/* Class Containers */
 .class-one-container {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f8f8f8; /* Light gray background */
-  }
-  
-  .student-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .student-item {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .edit-button,
-  .delete-button {
-    margin-left: 10px;
-    cursor: pointer;
-    background-color: #4caf50; /* Green background */
-    color: #fff; /* White text color */
-  }
-  
-  .form-container {
-    margin-top: 20px;
-  }
-  
-  .action-button {
-    margin-left: 10px;
-    cursor: pointer;
-    background-color: #2196f3; /* Blue background */
-    color: #fff; /* White text color */
-  }
-  /* ClassTwo.css, ClassThree.css, ClassFour.css */
+  background-color: #f8f8f8;
+}
+
 .class-two-container,
 .class-three-container,
 .class-four-container {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #f8f8f8; /* Light gray background */
+  background-color: #f8f8f8;
 }
 
-.student-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.student-item {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.edit-button,
-.delete-button {
-  margin-left: 10px;
-  cursor: pointer;
-  background-color: #ff9800; /* Orange background */
-  color: #fff; /* White text color */
-}
-
-.form-container {
-  margin-top: 20px;
-}
-
-.action-button {
-  margin-left: 10px;
-  cursor: pointer;
-  background-color: #e91e63; /* Pink background */
-  color: #fff; /* White text color */
-}
-/* Teachers.css */
-.teachers-container {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #f8f8f8; /* Light gray background */
-}
-
-.teacher-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.teacher-item {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.edit-button,
-.delete-button {
-  margin-left: 10px;
-  cursor: pointer;
+/* Button Styles */
+.edit-button {
   background-color: #4caf50; /* Green background */
-  color: #fff; /* White text color */
 }
 
-.form-container {
-  margin-top: 20px;
+.delete-button {
+  background-color: #ff9800; /* Orange background */
 }
 
 .action-button {
-  margin-left: 10px;
+  background-color: #e91e63; /* Pink background */
+}
+
+/* Teachers Container */
+.teachers-container {
+  background-color: #f8f8f8;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-group button {
+  background-color: #3498db;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  background-color: #2196f3; /* Blue background */
-  color: #fff; /* White text color */
+}
+
+.form-group button:hover {
+  background-color: #2980b9;
+}
+
+/* Link Styles */
+.link-container {
+  margin-top: 10px;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
 }
