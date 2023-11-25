@@ -54,8 +54,7 @@ function Teachers() {
     <div className="teachers-container">
       <h2>Teachers</h2>
 
-      {/* Teacher List */}
-      <ul className="teacher-list">
+       <ul className="teacher-list">
         {teachers.map((teacher, index) => (
           <li key={index} className="teacher-item">
             {teacher}
